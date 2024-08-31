@@ -1,0 +1,39 @@
+projects:
+  - print: True  # If 'False' is selected, it will not be displayed in 'home.html'
+    modal: True  # If 'True' is selected, modal can open in 'portfolio.html'
+    url: ""  # Full URL
+    image: ""  # path: assets/project/
+    date: ""  # Format: YYYY.MM.DD - Description
+    title: ""  # Project Title
+    summary: ""  # Brief summary of the project
+    description: ""  # Detailed description of the project
+    contents:
+      - title: ""  # Title of the content section
+        image: ""  # Image path
+        description: ""  # Description in HTML list items
+      - title: ""  # Title of the content section
+        image: ""  # Image path
+        description: ""  # Description in HTML list items
+      - title: ""  # Title of the content section
+        image: ""  # Image path
+        description: ""  # Description in HTML list items
+
+  - print: True  # If 'False' is selected, it will not be displayed in 'home.html'
+    modal: True  # If 'True' is selected, modal can open in 'portfolio.html'
+    url: ""  # Full URL
+    image: ""  # path: assets/project/
+    date: ""  # Format: YYYY.MM.DD - Description
+    title: "Dummy project"  # Project Title
+    summary: "This is Dummy"  # Brief summary of the project
+    description: ""  # Detailed description of the project
+    contents:
+      - title: ""  # Title of the content section
+        image: ""  # Image path
+        description: ""  # Description in HTML list items
+      - title: ""  # Title of the content section
+        image: ""  # Image path
+        description: ""  # Description in HTML list items
+      - title: ""  # Title of the content section
+        image: ""  # Image path
+        description: ""  # Description in HTML list items
+
