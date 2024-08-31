@@ -1,0 +1,10 @@
+- title: "Project One"
+  description: "A brief description of Project One."
+  image: "assets/images/project-one.jpg"  # Path to an image for the project
+  url: "https://link-to-project-one.com"  # URL to the project
+
+- title: "Project Two"
+  description: "A brief description of Project Two."
+  image: "assets/images/project-two.jpg"  # Path to an image for the project
+  url: "https://link-to-project-two.com"  # URL to the project
+

@@ -1,0 +1,51 @@
+# Site Settings
+baseurl: ""  # Leave empty if your site is at the root of the domain
+url: "https://kingaszafron.github.io"
+
+# Blog Settings
+theme_settings:
+  title: "eudajmonia"
+  favicon: "assets/favicon.ico"
+
+  # Profile Settings
+  profile:
+    image: "assets/img/smile.png"
+    username: "Kinga Szafron"
+    description: "Hi! My name is Kinga, and I am a second-year cognitive science student at Jagiellonian University. I have a deep interest in mathematical cognition, which drives much of my academic focus. Outside of my studies, I’m an avid reader, I love exploring both the mountains and the sea, and I’m dedicated to volunteering. Currently, I am the president of the Cognitive Science Student Association at JU, and I also tutor math. Come take a look :)"
+
+    experience:
+      - start: 2023
+        end: 2026
+        experience: "Bachelor in Cognitive Science"
+
+    skills:
+      - skill: "Cognitive Science Student Association President"
+      - skill: "Student Research Assistant"
+
+  # Icons
+  icons:
+    email: "kinga.szafron5@gmail.com"
+    linkedin: "https://www.linkedin.com/in/kingaszafron/"
+    github: "kingaszafron"
+    gitlab:
+    bitbucket:
+    google_plus:
+    twitter:
+    youtube:
+    facebook:
+    instagram:
+
+  # Disqus
+  disqus_shortname: 
+
+# Pagination
+paginate: 5
+paginate_path: "blog/page:num"
+
+# Build Settings
+sass:
+  sass_dir: "_sass"
+  style: :compressed
+gems: [jekyll-paginate]
+bootstrap:
+  assets: true
