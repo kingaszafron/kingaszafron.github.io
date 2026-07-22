@@ -11,7 +11,7 @@ theme_settings:
   profile:
     image: "assets/img/smile.png"
     username: "Kinga Szafron"
-    description: "Hi! My name is Kinga, and I am a second-year cognitive science student at Jagiellonian University. I have a deep interest in mathematical cognition, which drives much of my academic focus. Outside of my studies, I’m an avid reader, I love exploring both the mountains and the sea, and I’m dedicated to volunteering. Currently, I am the president of the Cognitive Science Student Association at JU, and I also tutor math. Come take a look :)"
+    description: "Hi! I'm Kinga, a Mathematics and Cognitive Science student at Jagiellonian University in Kraków and a researcher at the Mathematical Cognition and Learning Lab. My research interests include mathematical cognition, the SNARC effect, mathematical expertise, and long-term memory in individuals with dyscalculia. I'm endlessly curious and enjoy taking my time to understand things before forming an opinion. I also love etymology, reading, tutoring mathematics. If you asked me what I'd like to do in life, unfortunately my answer would probably be: everything."
 
     experience:
       - start: 2023
@@ -19,7 +19,7 @@ theme_settings:
         experience: "Bachelor in Cognitive Science"
 
     skills:
-      - skill: "Cognitive Science Student Association President"
+      - skill: "Cognitive Science Student Association President 2024-2026"
       - skill: "Student Research Assistant"
 
   # Icons
