@@ -2,7 +2,7 @@
 baseurl: ""  # Leave empty if your site is at the root of the domain
 url: "https://kingaszafron.github.io"
 
-# Blog Settings
+# Theme Settings
 theme_settings:
   title: "eudajmonia"
   favicon: "assets/favicon.ico"
@@ -11,22 +11,14 @@ theme_settings:
   profile:
     image: "assets/img/smile.png"
     username: "Kinga Szafron"
-    description: "Hi! I'm Kinga, a Mathematics and Cognitive Science student at Jagiellonian University in Kraków and a researcher at the Mathematical Cognition and Learning Lab. My research interests include mathematical cognition, the SNARC effect, mathematical expertise, and long-term memory in individuals with dyscalculia. I'm endlessly curious and enjoy taking my time to understand things before forming an opinion. I also love etymology, reading, tutoring mathematics. If you asked me what I'd like to do in life, unfortunately my answer would probably be: everything."
-
-    experience:
-      - start: 2023
-        end: 2026
-        experience: "Bachelor in Cognitive Science"
-
-    skills:
-      - skill: "Cognitive Science Student Association President 2024-2026"
-      - skill: "Student Research Assistant"
+    description: "Hi! I'm Kinga, a Cognitive Science student at Jagiellonian University in Kraków and a researcher at the Mathematical Cognition and Learning Lab. My research interests include mathematical cognition, the SNARC effect, mathematical expertise, and long-term memory in individuals with dyscalculia. I'm endlessly curious and enjoy taking my time to understand things before forming an opinion. I also love etymology, reading, tutoring mathematics. If you asked me what I'd like to do in life, unfortunately my answer would probably be: everything."
 
   # Icons
   icons:
     email: "kinga.szafron5@gmail.com"
     linkedin: "https://www.linkedin.com/in/kingaszafron/"
     github: "kingaszafron"
+    orcid: "0009-0000-5161-7981"
     gitlab:
     bitbucket:
     google_plus:
@@ -38,14 +30,9 @@ theme_settings:
   # Disqus
   disqus_shortname: 
 
-# Pagination
-paginate: 5
-paginate_path: "blog/page:num"
-
 # Build Settings
 sass:
   sass_dir: "_sass"
   style: :compressed
-gems: [jekyll-paginate]
 bootstrap:
   assets: true

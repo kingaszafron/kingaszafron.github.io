@@ -1,14 +1,18 @@
 #home {
+    // Profile is shown on every screen size (on small screens it sits above the content)
     #aside{
         display:block;
-        @media (max-width: 991px) {
-           display: none;
-        }
     }
-    #header-nav, #header-content, .bg{
+    #header-content, .bg{
         display:none;
         @media (max-width: 991px) {
            display: block;
+        }
+    }
+    // Navigation (About / Achievements) is always visible
+    header {
+        @media (min-width: 992px) {
+            margin-bottom: 10px;
         }
     }
     #header-content{
@@ -26,111 +30,66 @@
         height: 95px;
         background-color: $theme-dark;
     }
-    #posts.col-md-8{
+
+    // Main column next to the profile
+    #main {
+        padding: 30px 2% 0 4%;
         @media (max-width: 991px) {
-            min-width:100%;
-         }
-    }
-    #posts {
-        @extend %posts-padding;
-        .post{
-            width: 100%;
-            overflow: hidden;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-            padding: 15px 0px;
-            .post-wrap{
-                margin : 25px;
-                margin-left : 45px;
-                .text-warp {
-                    display: inline-block;
-                    .title {
-                        position: relative;
-                        line-height: 2rem;
-                    }
-                    .title::before {
-                        content: "";
-                        position: absolute;
-                        left: -25px;
-                        width: 8px;
-                        background-color: rgba(0,0,0,0.1);
-                        border-radius: 8px;
-                        height: 100%;
-                    }
-                    .excerpt{
-                        margin : 10px 0px;
-                    }
-                    .meta {
-                        color : $text-gray;
-                        font-size: 0.85rem;
-                        margin-right : 10px;
-                    }
-                    .tag-wrap{
-                        display : inline-block;
-                        .tag-sm {
-                            display: inline-block;
-                            background-color: rgba(0,0,0,0.07);
-                            margin-right: 3px;
-                            padding: 2px 9px;
-                            border-radius: 15px;
-                            color: $text-gray;
-                            font-size: 0.75rem;
-                        }
-                        .tag-sm:hover {
-                            background-color: $theme-color;
-                            color: #fff;
-                        }
-                    }
-                }
-                .img-wrap {
-                    img {
-                        width:100%;
-                    }
-                }
-            }
+            padding: 10px 10% 0!important;
         }
-        .post:hover{
-            .text-warp {
-                .title{
-                    color: $theme-color;
-                }
-                .title::before {
-                    background-color: $theme-color;
-                }
-            }
+        @media (max-width: 576px) {
+            padding: 10px 15px 0!important;
+        }
+    }
+    .home-section {
+        margin-bottom: 55px;
+    }
+    .lead {
+        font-size: 1rem;
+        line-height: 1.7em;
+    }
+    .intro {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    // Achievement cards
+    .achv-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin-bottom: 25px;
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    a.achv-card {
+        display: block;
+        padding: 18px 22px;
+        border-radius: 15px;
+        background-color: rgba(0,0,0,0.04);
+        transition: background-color 200ms ease-in-out;
+        p { margin: 0; }
+        .count {
+            color: $theme-color;
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        .label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.02rem;
+        }
+        .meta, .meta em {
+            margin-top: 4px;
+            color: $text-gray;
+            font-size: 0.8rem;
+        }
+        &:hover {
+            background-color: $theme-dark;
+            .count, .label, .meta, .meta em { color: #fff; }
         }
     }
 }
-
-// Pagination 
-#pagination{
-    margin-top : 60px;
-    margin-bottom : 60px;
-    text-align: center;
-    li.btn-rounded{
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        margin-right: 10px;
-        border: 2px solid rgba(0,0,0,0.07);
-        border-radius: 50%;
-        color: rgba(0,0,0,0.54);
-        font-size: 0.8rem;
-        font-weight: 600;
-        line-height: 30px;
-    }
-    li.prev, li.next {
-        background-color: rgba(0,0,0,0.07);
-        border: 2px solid rgba(0,0,0,0.0);
-    }
-
-    li.btn-rounded:hover{
-        background-color: $theme-dark;
-        border: 2px solid $theme-dark;
-        color : #fff;
-    }
-    .selected li{
-        background-color: $theme-dark;
-        border: 2px solid $theme-dark;
-        color : #fff;
-    }
-} 

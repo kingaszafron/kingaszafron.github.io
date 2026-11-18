@@ -1,0 +1,208 @@
+// Shared pieces for the home page and the Achievements page.
+// They reuse the Grape theme look: dark-green headings, grey rounded bars
+// that turn red on hover, the red timeline and the rounded grey buttons.
+
+html { scroll-behavior: smooth; }
+
+#home, #achievements {
+    .intro a, .detail a {
+        color: $theme-dark;
+        font-weight: 600;
+        &:hover { color: $theme-color; }
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+        color: $theme-dark;
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        @media (max-width: 576px) {
+            font-size: 21px;
+        }
+    }
+
+    // Rounded button (same as the 404 "return" button)
+    a.btn-round {
+        display: inline-block;
+        padding: 10px 30px;
+        border-radius: 15px;
+        background-color: rgba(0,0,0,0.07);
+        color: rgba(0,0,0,0.7);
+        font-weight: 600;
+        transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+        i { margin-left: 6px; font-size: 0.85rem; }
+        &:hover {
+            background-color: $theme-dark;
+            color: #fff;
+        }
+    }
+
+    // List entries with the grey bar on the left (as in the old post / tag lists)
+    .entries {
+        padding-left: 30px;
+        .entry {
+            position: relative;
+            margin: 22px 0;
+            p { margin: 2px 0; }
+            b, em { font-size: inherit; }
+            b { color: rgba(0,0,0,0.75); }
+            .meta {
+                color: $text-gray;
+                font-size: 0.85rem;
+            }
+            .title {
+                color: rgba(0,0,0,0.75);
+                font-weight: 600;
+                transition: color 200ms ease-in-out;
+            }
+            .translation {
+                color: $text-gray;
+                font-size: 0.9rem;
+                font-style: italic;
+            }
+            .detail {
+                font-size: 0.92rem;
+            }
+            .small, .small a {
+                color: $text-gray;
+                font-size: 0.82rem;
+            }
+            .small a:hover { color: $theme-color; }
+        }
+        .entry::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -30px;
+            width: 8px;
+            height: 100%;
+            background-color: rgba(0,0,0,0.1);
+            border-radius: 8px;
+            transition: background-color 200ms ease-in-out;
+        }
+        .entry:hover {
+            .title { color: $theme-color; }
+        }
+        .entry:hover::before {
+            background-color: $theme-color;
+        }
+    }
+
+    // Red timeline with dots (as in the old portfolio "Experience")
+    ul.timeline {
+        margin-left: 3%;
+        border-left: 5px solid $theme-color;
+        list-style-type: none;
+        li {
+            position: relative;
+            padding: 12px 0 12px 30px;
+            p { margin: 2px 0; }
+            .date {
+                color: rgba(0,0,0,0.5);
+                font-size: 0.75rem;
+                font-weight: 600;
+            }
+            .what {
+                font-size: 1rem;
+                font-weight: 600;
+            }
+            .where {
+                font-size: 0.9rem;
+                font-style: italic;
+            }
+            .note, .note em {
+                color: $text-gray;
+                font-size: 0.85rem;
+            }
+        }
+        li::before {
+            content: "";
+            position: absolute;
+            top: 17px;
+            left: -10px;
+            width: 15px;
+            height: 15px;
+            background-color: $theme-color;
+            border-radius: 50%;
+        }
+    }
+}
+
+// Achievements page
+#achievements {
+    @extend %page-padding;
+    .bg {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        top: 105px;
+        left: 0%;
+        height: 95px;
+        background-color: $theme-dark;
+    }
+    h1.title {
+        color: #fff;
+    }
+    ul.jump {
+        margin: 70px 0 10px;
+        list-style-type: none;
+        li {
+            display: inline-block;
+            margin: 0 4px 10px 0;
+        }
+        a.btn-round {
+            padding: 6px 18px;
+            font-size: 0.85rem;
+        }
+        .count {
+            margin-left: 2px;
+            color: $theme-color;
+            font-size: 0.7rem;
+            vertical-align: super;
+        }
+        a.btn-round:hover .count { color: #fff; }
+    }
+    .group {
+        padding-top: 40px;
+    }
+    .subgroup-title {
+        margin-top: 15px;
+        color: $text-gray;
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.03rem;
+    }
+    ul.skill-rows {
+        list-style-type: none;
+        li {
+            margin: 12px 0;
+            p { margin: 0; }
+        }
+        .label {
+            color: $text-gray;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .value {
+            font-size: 0.95rem;
+        }
+    }
+}
+
+// ORCID badge in the icon row (Font Awesome 5.9 has no ORCID icon)
+#icons i.orcid {
+    display: inline-block;
+    font-family: 'Spoqa Han Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+footer {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,107 @@
+---
+layout: page
+---
+{% assign cv = site.data.cv %}
+{% assign n_talks = cv.talks_first_author.size | plus: cv.talks_coauthor.size %}
+<div id="achievements">
+  <section class="bg"></section>
+  <h1 class="title">{{ page.title }}</h1>
+
+  <!-- Jump links to each group -->
+  <ul class="jump">
+    <li><a class="btn-round" href="#publications">Publications <span class="count">{{ cv.publications.size }}</span></a></li>
+    <li><a class="btn-round" href="#presentations">Conference presentations <span class="count">{{ n_talks }}</span></a></li>
+    <li><a class="btn-round" href="#scholarships">Scholarships <span class="count">{{ cv.scholarships.size }}</span></a></li>
+    <li><a class="btn-round" href="#service">Academic service <span class="count">{{ cv.service.size }}</span></a></li>
+    <li><a class="btn-round" href="#skills">Skills</a></li>
+  </ul>
+
+  <!-- Publications -->
+  <section class="group" id="publications">
+    <p class="section-title">Publications</p>
+    <div class="entries">
+      {% for p in cv.publications %}
+      <div class="entry">
+        <p class="meta">{{ p.date }}</p>
+        <p class="title">{{ p.title }}</p>
+        <p class="detail">{{ p.authors }} {{ p.venue }}</p>
+        {% if p.link %}<p class="small"><a href="{{ p.link }}">{{ p.link_label | default: p.link }}</a></p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Conference presentations -->
+  <section class="group" id="presentations">
+    <p class="section-title">Conference presentations</p>
+    <p class="subgroup-title">As first author</p>
+    <div class="entries">
+      {% for t in cv.talks_first_author %}
+      <div class="entry">
+        <p class="meta">{{ t.date }} · {{ t.type }}</p>
+        <p class="title">{{ t.title }}</p>
+        {% if t.translation %}<p class="translation">{{ t.translation }}</p>{% endif %}
+        <p class="detail">{{ t.venue }}</p>
+        {% if t.authors %}<p class="small">{{ t.authors }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    <p class="subgroup-title">As co-author</p>
+    <div class="entries">
+      {% for t in cv.talks_coauthor %}
+      <div class="entry">
+        <p class="meta">{{ t.date }} · {{ t.type }}</p>
+        <p class="title">{{ t.title }}</p>
+        {% if t.translation %}<p class="translation">{{ t.translation }}</p>{% endif %}
+        <p class="detail">{{ t.venue }}</p>
+        {% if t.authors %}<p class="small">{{ t.authors }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Scholarships -->
+  <section class="group" id="scholarships">
+    <p class="section-title">Scholarships</p>
+    <div class="entries">
+      {% for s in cv.scholarships %}
+      <div class="entry">
+        <p class="meta">{{ s.date }}</p>
+        <p class="title">{{ s.title }}</p>
+        {% if s.note %}<p class="detail">{{ s.note }}</p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Academic service and organisation -->
+  <section class="group" id="service">
+    <p class="section-title">Academic service &amp; organisation</p>
+    <div class="entries">
+      {% for s in cv.service %}
+      <div class="entry">
+        <p class="meta">{{ s.date }} · {{ s.role }}</p>
+        <p class="title">{{ s.title }}</p>
+        {% if s.where %}<p class="translation">{{ s.where }}</p>{% endif %}
+        {% if s.note %}<p class="detail">{{ s.note }}</p>{% endif %}
+        {% if s.link %}<p class="small"><a href="{{ s.link }}">{{ s.link_label | default: s.link }}</a></p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="group" id="skills">
+    <p class="section-title">Skills</p>
+    <ul class="skill-rows">
+      {% for s in cv.skills %}
+      <li>
+        <p class="label">{{ s.label }}</p>
+        <p class="value">{{ s.value }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+
+{% include footer.html %}

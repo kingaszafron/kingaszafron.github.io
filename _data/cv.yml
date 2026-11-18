@@ -1,0 +1,180 @@
+# ---------------------------------------------------------------------------
+# Everything shown on the home page and the Achievements page lives here.
+# Add a new talk, publication, etc. to the right list below and both pages
+# (including the counters on the home page) update automatically.
+# HTML is allowed inside the text, e.g. <b>Szafron, K.</b> or <em>title</em>.
+# ---------------------------------------------------------------------------
+
+research_profile: >-
+  Cognitive science graduate (BA, Jagiellonian University, 2026), currently
+  a Master's student in cognitive science. My research concerns numerical
+  cognition: spatial-numerical associations (the SNARC effect), their
+  stability across bodily and temporal contexts, and long-term memory for
+  numerical information within Fuzzy-Trace Theory. I have worked across the
+  full research cycle, from study design and pre-registration through VR data
+  collection to Bayesian analysis and presentation at international
+  conferences.
+
+# Short one-liners on the four "Achievements" cards on the home page
+cards:
+  publications: "<em>Applied Cognitive Psychology</em> (in press)"
+  presentations: "Talks and posters in Padua, Sheffield, Bressanone, Toruń and more"
+  scholarships: "Minister of Science and Higher Education · JU Rector's Scholarship"
+  service: "Krakow Seminar on Mathematical Cognition, WISK retreat, student association"
+
+lab:
+  name: "Mathematical Cognition and Learning Lab"
+  url: "https://mcll.uj.edu.pl"
+  years: "2024–present"
+  leads: "Mateusz Hohol, Krzysztof Cipora"
+
+projects:
+  - title: "The gist of math"
+    subtitle: "Applying Fuzzy-Trace Theory as an integrative framework to investigate different dimensions of numerical memory and their associations with mathematical skills in the general population and among individuals with dyscalculia"
+    years: "2025–present"
+    role: "Research Assistant (NCN scholarship holder)"
+    description: "Design of experimental tasks, participant recruitment, behavioural testing, data analysis and multinomial processing tree (MPT) modelling, contribution to manuscripts, co-managing the project website and social media."
+    funding: "National Science Centre, Poland · OPUS 28, no. 2024/55/B/HS6/02944 · PI: M. Hohol"
+
+  - title: "Embodied and situated constraints of the SNARC effect"
+    subtitle: "A virtual-reality study"
+    years: "2024–present"
+    role: "Research Assistant; co-developed the study"
+    description: "Study conceptualisation and pre-registration, coordination of data collection (N = 80, four body postures, VR). The study formed the basis of my BA thesis."
+    funding: "Flagship Project “Mathematical Cognition and Learning Lab”, Excellence Initiative – Research University, Jagiellonian University"
+
+  - title: "Mind, Number, Space"
+    subtitle: "Numerical-spatial cognition in professional mathematicians"
+    years: "2024–present"
+    role: "Research Assistant"
+    description: "Computer implementation of complex behavioural procedures, participant recruitment, co-coordination of data collection, data analysis."
+    funding: "Ministry of Science and Higher Education · “Science for Society II”, no. NdS-II/SN/0332/2024/01"
+
+education:
+  - years: "2026–present"
+    degree: "Master's programme in Cognitive Science"
+    school: "Jagiellonian University, Kraków"
+    note: "Thesis (in progress) on numerical memory within Fuzzy-Trace Theory."
+
+  - years: "2023–2026"
+    degree: "BA in Cognitive Science"
+    school: "Jagiellonian University, Faculty of Philosophy, Kraków"
+    note: "Thesis: <em>No Influence of Body Position on the SNARC Effect: A Repeated-Measure Study Across Four Body Postures</em>. Supervisor: Assoc. Prof. Mateusz Hohol."
+
+publications:
+  - date: "in press"
+    authors: "Obidziński, M., Bażela, N., <b>Szafron, K.</b>, & Hohol, M."
+    title: "Relationship between purely verbal and numerical–verbal long-term memory in the standard conjoint recognition model"
+    venue: "<em>Applied Cognitive Psychology</em>"
+    link: "https://doi.org/10.31234/osf.io/sdz56_v2"
+    link_label: "Preprint: doi:10.31234/osf.io/sdz56_v2"
+
+talks_first_author:
+  - date: "10/2026"
+    title: "Czasowa stabilność efektu SNARC"
+    translation: "Temporal stability of the SNARC effect"
+    type: "Talk (in Polish)"
+    venue: "Conference “Mathematical Cognition 2.0: Neural Basis, Diagnosis, Therapy, Education”, Institute of Psychology, Nicolaus Copernicus University, Toruń"
+
+  - date: "06/2026"
+    title: "Towards the temporal dynamics of numerical cognition: the SNARC effect is robust against embodied influences when tested at a single moment in time"
+    type: "Symposium talk"
+    venue: "Symposium “SNARC: universality within and between subjects and new methodological advances”, 9th Annual Conference of the Mathematical Cognition and Learning Society, Padua, Italy"
+    authors: "<b>K. Szafron</b>, K. Cipora, M. Hohol"
+
+  - date: "04/2026"
+    title: "Minority pulls the mean – o tym, co faktycznie oznacza wykrycie efektu w psychologii?"
+    translation: "Minority pulls the mean: what does detecting an effect in psychology actually mean?"
+    type: "Talk (in Polish)"
+    venue: "2nd Interdisciplinary Retreat of Cognitive Science Students (WISK II), Poronin"
+
+  - date: "01/2026"
+    title: "Body posture modulates the SNARC effect: Embodied and situated constraints of numerical cognition?"
+    type: "Poster"
+    venue: "XLIV European Workshop on Cognitive Neuropsychology, Bressanone, Italy"
+
+  - date: "12/2025"
+    title: "Czy postawa ciała wpływa na efekt SNARC?"
+    translation: "Does body posture affect the SNARC effect?"
+    type: "Talk (in Polish)"
+    venue: "11th Young Psychology Congress (KAMP), Murzasichle"
+
+  - date: "10/2025"
+    title: "Does body posture modulate the SNARC effect? Embodied and situated constraints of numerical cognition"
+    type: "Talk"
+    venue: "14th Peripatetic Conference “Movement Matters”, HILL Lab, University of Warsaw, Zakopane"
+
+  - date: "09/2025"
+    title: "Does body posture modulate the SNARC effect? Embodied and situated constraints of numerical cognition"
+    type: "Poster"
+    venue: "24th Conference of the European Society for Cognitive Psychology (ESCoP), Sheffield, UK"
+    authors: "<b>K. Szafron</b>, K. Cipora, H. Balcerzak, M. Hohol"
+
+  - date: "03/2025"
+    title: "Ku holistycznej metodzie nauczania matematyki: perspektywa kognitywistyczna"
+    translation: "Towards a holistic approach to teaching mathematics: a cognitive science perspective"
+    type: "Talk (in Polish)"
+    venue: "Conference “Mathematical Cognition: Neural Basis, Diagnosis, Therapy, Education”"
+
+  - date: "11/2024"
+    title: "Eureka! i jej rola w poznaniu matematycznym"
+    translation: "Eureka! and its role in mathematical cognition"
+    type: "Talk (in Polish)"
+    venue: "10th Young Psychology Congress (KAMP)"
+
+talks_coauthor:
+  - date: "06/2026"
+    title: "Beyond rote retrieval: a unified fuzzy-trace framework for numerical memory"
+    type: "Symposium talk"
+    venue: "9th Annual Conference of the Mathematical Cognition and Learning Society, Padua, Italy"
+    authors: "Bażela, N., Obidziński, M., <b>Szafron, K.</b>, Cipora, K., & Hohol, M."
+
+  - date: "06/2026"
+    title: "Relationship between long-term memory for sentences with and without numbers in the context of fuzzy-trace theory"
+    type: "Symposium talk"
+    venue: "9th Annual Conference of the Mathematical Cognition and Learning Society, Padua, Italy"
+    authors: "Obidziński, M., Bażela, N., <b>Szafron, K.</b>, & Hohol, M."
+
+scholarships:
+  - date: "2025/26"
+    title: "Minister of Science and Higher Education Scholarship"
+    note: "For significant achievements."
+
+  - date: "2025/26"
+    title: "Rector's Scholarship, Jagiellonian University"
+    note: "Awarded to at most 10% of students in the programme."
+
+service:
+  - date: "2026–present"
+    role: "Co-organiser"
+    title: "Krakow Seminar on Mathematical Cognition"
+    where: "MCLL, Jagiellonian University"
+    note: "Monthly hybrid seminar with invited researchers; 7 editions in 2026, including speakers from Padua, Paris (CNRS), Loughborough and Derby."
+    link: "https://mcll.uj.edu.pl/past-seminars"
+    link_label: "Past seminars"
+
+  - date: "2024–2026"
+    role: "President"
+    title: "Cognitive Science Student Association"
+    where: "Jagiellonian University"
+    note: "Led the association's academic activities."
+
+  - date: "2025–2026"
+    role: "Lead organiser and co-founder"
+    title: "Interdisciplinary Retreat of Cognitive Science Students (WISK I and II)"
+    where: "Poronin"
+    note: "Student research retreat-conference built from scratch, funded by the JU Council of Student Research Societies; WISK II: six student panels and two invited lectures."
+
+  - date: "2025–2026"
+    role: "Initiator"
+    title: "“Collisions with…” open meeting series"
+    where: "KNSK UJ"
+    note: "Six meetings in which the disciplines that make up cognitive science, from philosophy to linguistics, “collide” with cognitive science itself."
+
+skills:
+  - label: "Methods"
+    value: "Behavioural experiment design (incl. VR), pre-registration, participant recruitment and coordination of data collection, data analysis (incl. Bayesian), multinomial processing tree (MPT) modelling"
+  - label: "Software"
+    value: "R, Python, PsychoPy, OpenSesame, LaTeX"
+  - label: "Languages"
+    value: "Polish (native), English (C1, Cambridge C1 Advanced)"

@@ -23,6 +23,14 @@
 </li>
 {% endif %}
 
+{% if icons.orcid %}
+<li>
+  <a href="https://orcid.org/{{ icons.orcid }}" title="ORCID">
+    <i class="orcid">iD</i>
+  </a>
+</li>
+{% endif %}
+
 {% if icons.gitlab %}
 <li>
   <a href="https://gitlab.com/{{ icons.gitlab }}">
